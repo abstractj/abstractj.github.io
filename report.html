@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .group-header th {
+        font-size: 200%;
+      }
+      .sub-header th {
+        font-size: 150%;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        white-space: nowrap;
+        padding: .3em;
+      }
+      table {
+        margin: 0 auto;
+      }
+      .severity {
+        text-align: center;
+        font-weight: bold;
+        color: #fafafa;
+      }
+      .severity-LOW .severity { background-color: #5fbb31; }
+      .severity-MEDIUM .severity { background-color: #e9c600; }
+      .severity-HIGH .severity { background-color: #ff8800; }
+      .severity-CRITICAL .severity { background-color: #e40000; }
+      .severity-UNKNOWN .severity { background-color: #747474; }
+      .severity-LOW { background-color: #5fbb3160; }
+      .severity-MEDIUM { background-color: #e9c60060; }
+      .severity-HIGH { background-color: #ff880060; }
+      .severity-CRITICAL { background-color: #e4000060; }
+      .severity-UNKNOWN { background-color: #74747460; }
+      table tr td:first-of-type {
+        font-weight: bold;
+      }
+      .links a,
+      .links[data-more-links=on] a {
+        display: block;
+      }
+      .links[data-more-links=off] a:nth-of-type(1n+5) {
+        display: none;
+      }
+      a.toggle-more-links { cursor: pointer; }
+    </style>
+    <title>quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1) - Trivy Report - 2023-03-06 15:22:35.534172544 -0300 -03 m=+3.852227451 </title>
+    <script>
+      window.onload = function() {
+        document.querySelectorAll('td.links').forEach(function(linkCell) {
+          var links = [].concat.apply([], linkCell.querySelectorAll('a'));
+          [].sort.apply(links, function(a, b) {
+            return a.href > b.href ? 1 : -1;
+          });
+          links.forEach(function(link, idx) {
+            if (links.length > 3 && 3 === idx) {
+              var toggleLink = document.createElement('a');
+              toggleLink.innerText = "Toggle more links";
+              toggleLink.href = "#toggleMore";
+              toggleLink.setAttribute("class", "toggle-more-links");
+              linkCell.appendChild(toggleLink);
+            }
+            linkCell.appendChild(link);
+          });
+        });
+        document.querySelectorAll('a.toggle-more-links').forEach(function(toggleLink) {
+          toggleLink.onclick = function() {
+            var expanded = toggleLink.parentElement.getAttribute("data-more-links");
+            toggleLink.parentElement.setAttribute("data-more-links", "on" === expanded ? "off" : "on");
+            return false;
+          };
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1) - Trivy Report - 2023-03-06 15:22:35.534197486 -0300 -03 m=+3.852252389</h1>
+    <table>
+      <tr class="group-header"><th colspan="6">redhat</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">lua</td>
+        <td>CVE-2021-43519</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">5.4.2-4.el9_0.3</td>
+        <td>5.4.4-2.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="http://lua-users.org/lists/lua-l/2021-10/msg00123.html">http://lua-users.org/lists/lua-l/2021-10/msg00123.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-11/msg00015.html">http://lua-users.org/lists/lua-l/2021-11/msg00015.html</a>
+          <a href="https://access.redhat.com/errata/RHSA-2023:0957">https://access.redhat.com/errata/RHSA-2023:0957</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2021-43519">https://access.redhat.com/security/cve/CVE-2021-43519</a>
+          <a href="https://bugzilla.redhat.com/2047672">https://bugzilla.redhat.com/2047672</a>
+          <a href="https://bugzilla.redhat.com/2064772">https://bugzilla.redhat.com/2064772</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0957.html">https://errata.almalinux.org/9/ALSA-2023-0957.html</a>
+          <a href="https://linux.oracle.com/cve/CVE-2021-43519.html">https://linux.oracle.com/cve/CVE-2021-43519.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0957.html">https://linux.oracle.com/errata/ELSA-2023-0957.html</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7XHFYHGSZKL53VCLSJSAJ6VMFGAIXKO/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7XHFYHGSZKL53VCLSJSAJ6VMFGAIXKO/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3EMGAQ5Y6GXJLY4K5DUOOEQT4MZ4J4F/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3EMGAQ5Y6GXJLY4K5DUOOEQT4MZ4J4F/</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-43519">https://nvd.nist.gov/vuln/detail/CVE-2021-43519</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">lua</td>
+        <td>CVE-2021-44964</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">5.4.2-4.el9_0.3</td>
+        <td>5.4.4-2.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="http://lua-users.org/lists/lua-l/2021-11/msg00186.html">http://lua-users.org/lists/lua-l/2021-11/msg00186.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00007.html">http://lua-users.org/lists/lua-l/2021-12/msg00007.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00015.html">http://lua-users.org/lists/lua-l/2021-12/msg00015.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00030.html">http://lua-users.org/lists/lua-l/2021-12/msg00030.html</a>
+          <a href="https://access.redhat.com/errata/RHSA-2023:0957">https://access.redhat.com/errata/RHSA-2023:0957</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2021-44964">https://access.redhat.com/security/cve/CVE-2021-44964</a>
+          <a href="https://bugzilla.redhat.com/2047672">https://bugzilla.redhat.com/2047672</a>
+          <a href="https://bugzilla.redhat.com/2064772">https://bugzilla.redhat.com/2064772</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0957.html">https://errata.almalinux.org/9/ALSA-2023-0957.html</a>
+          <a href="https://github.com/Lua-Project/lua-5.4.4-sandbox-escape-with-new-vulnerability">https://github.com/Lua-Project/lua-5.4.4-sandbox-escape-with-new-vulnerability</a>
+          <a href="https://linux.oracle.com/cve/CVE-2021-44964.html">https://linux.oracle.com/cve/CVE-2021-44964.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0957.html">https://linux.oracle.com/errata/ELSA-2023-0957.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44964">https://nvd.nist.gov/vuln/detail/CVE-2021-44964</a>
+          <a href="https://www.lua.org/bugs.html#5.4.4-1">https://www.lua.org/bugs.html#5.4.4-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">lua-libs</td>
+        <td>CVE-2021-43519</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">5.4.2-4.el9_0.3</td>
+        <td>5.4.4-2.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="http://lua-users.org/lists/lua-l/2021-10/msg00123.html">http://lua-users.org/lists/lua-l/2021-10/msg00123.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-11/msg00015.html">http://lua-users.org/lists/lua-l/2021-11/msg00015.html</a>
+          <a href="https://access.redhat.com/errata/RHSA-2023:0957">https://access.redhat.com/errata/RHSA-2023:0957</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2021-43519">https://access.redhat.com/security/cve/CVE-2021-43519</a>
+          <a href="https://bugzilla.redhat.com/2047672">https://bugzilla.redhat.com/2047672</a>
+          <a href="https://bugzilla.redhat.com/2064772">https://bugzilla.redhat.com/2064772</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0957.html">https://errata.almalinux.org/9/ALSA-2023-0957.html</a>
+          <a href="https://linux.oracle.com/cve/CVE-2021-43519.html">https://linux.oracle.com/cve/CVE-2021-43519.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0957.html">https://linux.oracle.com/errata/ELSA-2023-0957.html</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7XHFYHGSZKL53VCLSJSAJ6VMFGAIXKO/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C7XHFYHGSZKL53VCLSJSAJ6VMFGAIXKO/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3EMGAQ5Y6GXJLY4K5DUOOEQT4MZ4J4F/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3EMGAQ5Y6GXJLY4K5DUOOEQT4MZ4J4F/</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-43519">https://nvd.nist.gov/vuln/detail/CVE-2021-43519</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">lua-libs</td>
+        <td>CVE-2021-44964</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">5.4.2-4.el9_0.3</td>
+        <td>5.4.4-2.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="http://lua-users.org/lists/lua-l/2021-11/msg00186.html">http://lua-users.org/lists/lua-l/2021-11/msg00186.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00007.html">http://lua-users.org/lists/lua-l/2021-12/msg00007.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00015.html">http://lua-users.org/lists/lua-l/2021-12/msg00015.html</a>
+          <a href="http://lua-users.org/lists/lua-l/2021-12/msg00030.html">http://lua-users.org/lists/lua-l/2021-12/msg00030.html</a>
+          <a href="https://access.redhat.com/errata/RHSA-2023:0957">https://access.redhat.com/errata/RHSA-2023:0957</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2021-44964">https://access.redhat.com/security/cve/CVE-2021-44964</a>
+          <a href="https://bugzilla.redhat.com/2047672">https://bugzilla.redhat.com/2047672</a>
+          <a href="https://bugzilla.redhat.com/2064772">https://bugzilla.redhat.com/2064772</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0957.html">https://errata.almalinux.org/9/ALSA-2023-0957.html</a>
+          <a href="https://github.com/Lua-Project/lua-5.4.4-sandbox-escape-with-new-vulnerability">https://github.com/Lua-Project/lua-5.4.4-sandbox-escape-with-new-vulnerability</a>
+          <a href="https://linux.oracle.com/cve/CVE-2021-44964.html">https://linux.oracle.com/cve/CVE-2021-44964.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0957.html">https://linux.oracle.com/errata/ELSA-2023-0957.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44964">https://nvd.nist.gov/vuln/detail/CVE-2021-44964</a>
+          <a href="https://www.lua.org/bugs.html#5.4.4-1">https://www.lua.org/bugs.html#5.4.4-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2022-4203</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-4203">https://access.redhat.com/security/cve/CVE-2022-4203</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4203">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4203</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c927a3492698c254637da836762f9b1f86cffabc">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c927a3492698c254637da836762f9b1f86cffabc</a>
+          <a href="https://github.com/advisories/GHSA-w67w-mw4j-8qrv">https://github.com/advisories/GHSA-w67w-mw4j-8qrv</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-4203.html">https://linux.oracle.com/cve/CVE-2022-4203.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-4203">https://nvd.nist.gov/vuln/detail/CVE-2022-4203</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0008.html">https://rustsec.org/advisories/RUSTSEC-2023-0008.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2022-4304</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-4304">https://access.redhat.com/security/cve/CVE-2022-4304</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://github.com/advisories/GHSA-p52g-cm5j-mjv4">https://github.com/advisories/GHSA-p52g-cm5j-mjv4</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-4304.html">https://linux.oracle.com/cve/CVE-2022-4304.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-4304">https://nvd.nist.gov/vuln/detail/CVE-2022-4304</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0007.html">https://rustsec.org/advisories/RUSTSEC-2023-0007.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2022-4450</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-4450">https://access.redhat.com/security/cve/CVE-2022-4450</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b</a>
+          <a href="https://github.com/advisories/GHSA-v5w6-wcm8-jm4q">https://github.com/advisories/GHSA-v5w6-wcm8-jm4q</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-4450.html">https://linux.oracle.com/cve/CVE-2022-4450.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-4450">https://nvd.nist.gov/vuln/detail/CVE-2022-4450</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0010.html">https://rustsec.org/advisories/RUSTSEC-2023-0010.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2023-0215</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2023-0215">https://access.redhat.com/security/cve/CVE-2023-0215</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344</a>
+          <a href="https://github.com/advisories/GHSA-r7jw-wp68-3xch">https://github.com/advisories/GHSA-r7jw-wp68-3xch</a>
+          <a href="https://linux.oracle.com/cve/CVE-2023-0215.html">https://linux.oracle.com/cve/CVE-2023-0215.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0215">https://nvd.nist.gov/vuln/detail/CVE-2023-0215</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0009.html">https://rustsec.org/advisories/RUSTSEC-2023-0009.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5845-1">https://ubuntu.com/security/notices/USN-5845-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5845-2">https://ubuntu.com/security/notices/USN-5845-2</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2023-0216</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2023-0216">https://access.redhat.com/security/cve/CVE-2023-0216</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0216">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0216</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=934a04f0e775309cadbef0aa6b9692e1b12a76c6">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=934a04f0e775309cadbef0aa6b9692e1b12a76c6</a>
+          <a href="https://github.com/advisories/GHSA-29xx-hcv2-c4cp">https://github.com/advisories/GHSA-29xx-hcv2-c4cp</a>
+          <a href="https://linux.oracle.com/cve/CVE-2023-0216.html">https://linux.oracle.com/cve/CVE-2023-0216.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0216">https://nvd.nist.gov/vuln/detail/CVE-2023-0216</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0011.html">https://rustsec.org/advisories/RUSTSEC-2023-0011.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2023-0217</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2023-0217">https://access.redhat.com/security/cve/CVE-2023-0217</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0217">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0217</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=23985bac83fd50c8e29431009302b5442f985096">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=23985bac83fd50c8e29431009302b5442f985096</a>
+          <a href="https://github.com/advisories/GHSA-vxrh-cpg7-8vjr">https://github.com/advisories/GHSA-vxrh-cpg7-8vjr</a>
+          <a href="https://linux.oracle.com/cve/CVE-2023-0217.html">https://linux.oracle.com/cve/CVE-2023-0217.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0217">https://nvd.nist.gov/vuln/detail/CVE-2023-0217</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0012.html">https://rustsec.org/advisories/RUSTSEC-2023-0012.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2023-0286</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2023-0286">https://access.redhat.com/security/cve/CVE-2023-0286</a>
+          <a href="https://access.redhat.com/security/cve/cve-2023-0286">https://access.redhat.com/security/cve/cve-2023-0286</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d</a>
+          <a href="https://github.com/advisories/GHSA-x4qr-2fvf-3mr5">https://github.com/advisories/GHSA-x4qr-2fvf-3mr5</a>
+          <a href="https://github.com/pyca/cryptography/security/advisories/GHSA-x4qr-2fvf-3mr5">https://github.com/pyca/cryptography/security/advisories/GHSA-x4qr-2fvf-3mr5</a>
+          <a href="https://linux.oracle.com/cve/CVE-2023-0286.html">https://linux.oracle.com/cve/CVE-2023-0286.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0286">https://nvd.nist.gov/vuln/detail/CVE-2023-0286</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0006.html">https://rustsec.org/advisories/RUSTSEC-2023-0006.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5845-1">https://ubuntu.com/security/notices/USN-5845-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5845-2">https://ubuntu.com/security/notices/USN-5845-2</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">openssl-libs</td>
+        <td>CVE-2023-0401</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">1:3.0.1-43.el9_0</td>
+        <td>1:3.0.1-47.el9_1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0946">https://access.redhat.com/errata/RHSA-2023:0946</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2023-0401">https://access.redhat.com/security/cve/CVE-2023-0401</a>
+          <a href="https://bugzilla.redhat.com/2164440">https://bugzilla.redhat.com/2164440</a>
+          <a href="https://bugzilla.redhat.com/2164487">https://bugzilla.redhat.com/2164487</a>
+          <a href="https://bugzilla.redhat.com/2164488">https://bugzilla.redhat.com/2164488</a>
+          <a href="https://bugzilla.redhat.com/2164492">https://bugzilla.redhat.com/2164492</a>
+          <a href="https://bugzilla.redhat.com/2164494">https://bugzilla.redhat.com/2164494</a>
+          <a href="https://bugzilla.redhat.com/2164497">https://bugzilla.redhat.com/2164497</a>
+          <a href="https://bugzilla.redhat.com/2164499">https://bugzilla.redhat.com/2164499</a>
+          <a href="https://bugzilla.redhat.com/2164500">https://bugzilla.redhat.com/2164500</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0401">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0401</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0946.html">https://errata.almalinux.org/9/ALSA-2023-0946.html</a>
+          <a href="https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=d3b6dfd70db844c4499bec6ad6601623a565e674">https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=d3b6dfd70db844c4499bec6ad6601623a565e674</a>
+          <a href="https://github.com/advisories/GHSA-vrh7-x64v-7vxq">https://github.com/advisories/GHSA-vrh7-x64v-7vxq</a>
+          <a href="https://linux.oracle.com/cve/CVE-2023-0401.html">https://linux.oracle.com/cve/CVE-2023-0401.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-12152.html">https://linux.oracle.com/errata/ELSA-2023-12152.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-0401">https://nvd.nist.gov/vuln/detail/CVE-2023-0401</a>
+          <a href="https://rustsec.org/advisories/RUSTSEC-2023-0013.html">https://rustsec.org/advisories/RUSTSEC-2023-0013.html</a>
+          <a href="https://ubuntu.com/security/notices/USN-5844-1">https://ubuntu.com/security/notices/USN-5844-1</a>
+          <a href="https://www.openssl.org/news/secadv/20230207.txt">https://www.openssl.org/news/secadv/20230207.txt</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3</td>
+        <td>CVE-2022-45061</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.9.14-1.el9_1.1</td>
+        <td>3.9.14-1.el9_1.2</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0953">https://access.redhat.com/errata/RHSA-2023:0953</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-45061">https://access.redhat.com/security/cve/CVE-2022-45061</a>
+          <a href="https://bugzilla.redhat.com/2144072">https://bugzilla.redhat.com/2144072</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1834423">https://bugzilla.redhat.com/show_bug.cgi?id=1834423</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2120642">https://bugzilla.redhat.com/show_bug.cgi?id=2120642</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2144072">https://bugzilla.redhat.com/show_bug.cgi?id=2144072</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28861">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28861</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0953.html">https://errata.almalinux.org/9/ALSA-2023-0953.html</a>
+          <a href="https://errata.rockylinux.org/RLSA-2023:0833">https://errata.rockylinux.org/RLSA-2023:0833</a>
+          <a href="https://github.com/python/cpython/issues/98433">https://github.com/python/cpython/issues/98433</a>
+          <a href="https://github.com/python/cpython/pull/99092">https://github.com/python/cpython/pull/99092</a>
+          <a href="https://github.com/python/cpython/pull/99230 (3.9-branch)">https://github.com/python/cpython/pull/99230 (3.9-branch)</a>
+          <a href="https://github.com/python/cpython/pull/99231 (3.8-branch)">https://github.com/python/cpython/pull/99231 (3.8-branch)</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-45061.html">https://linux.oracle.com/cve/CVE-2022-45061.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0953.html">https://linux.oracle.com/errata/ELSA-2023-0953.html</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WQPHKGNXUJC3TC3BDW5RKGROWRJVSFR/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WQPHKGNXUJC3TC3BDW5RKGROWRJVSFR/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IN26PWZTYG6IF3APLRXQJBVACQHZUPT2/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IN26PWZTYG6IF3APLRXQJBVACQHZUPT2/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3EJ6J7PXVQOULBQZQGBXCXY6LFF6LZD/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3EJ6J7PXVQOULBQZQGBXCXY6LFF6LZD/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XXZJL3CNAFS5PAIR7K4RL62S3Y7THR7O/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XXZJL3CNAFS5PAIR7K4RL62S3Y7THR7O/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-45061">https://nvd.nist.gov/vuln/detail/CVE-2022-45061</a>
+          <a href="https://python-security.readthedocs.io/vuln/slow-idna-large-strings.html">https://python-security.readthedocs.io/vuln/slow-idna-large-strings.html</a>
+          <a href="https://security.netapp.com/advisory/ntap-20221209-0007/">https://security.netapp.com/advisory/ntap-20221209-0007/</a>
+          <a href="https://ubuntu.com/security/notices/USN-5767-1">https://ubuntu.com/security/notices/USN-5767-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5767-2">https://ubuntu.com/security/notices/USN-5767-2</a>
+          <a href="https://ubuntu.com/security/notices/USN-5888-1">https://ubuntu.com/security/notices/USN-5888-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3-libs</td>
+        <td>CVE-2022-45061</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.9.14-1.el9_1.1</td>
+        <td>3.9.14-1.el9_1.2</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0953">https://access.redhat.com/errata/RHSA-2023:0953</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-45061">https://access.redhat.com/security/cve/CVE-2022-45061</a>
+          <a href="https://bugzilla.redhat.com/2144072">https://bugzilla.redhat.com/2144072</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1834423">https://bugzilla.redhat.com/show_bug.cgi?id=1834423</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2120642">https://bugzilla.redhat.com/show_bug.cgi?id=2120642</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2144072">https://bugzilla.redhat.com/show_bug.cgi?id=2144072</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28861">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28861</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0953.html">https://errata.almalinux.org/9/ALSA-2023-0953.html</a>
+          <a href="https://errata.rockylinux.org/RLSA-2023:0833">https://errata.rockylinux.org/RLSA-2023:0833</a>
+          <a href="https://github.com/python/cpython/issues/98433">https://github.com/python/cpython/issues/98433</a>
+          <a href="https://github.com/python/cpython/pull/99092">https://github.com/python/cpython/pull/99092</a>
+          <a href="https://github.com/python/cpython/pull/99230 (3.9-branch)">https://github.com/python/cpython/pull/99230 (3.9-branch)</a>
+          <a href="https://github.com/python/cpython/pull/99231 (3.8-branch)">https://github.com/python/cpython/pull/99231 (3.8-branch)</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-45061.html">https://linux.oracle.com/cve/CVE-2022-45061.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0953.html">https://linux.oracle.com/errata/ELSA-2023-0953.html</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AOUKI72ACV6CHY2QUFO6VK2DNMVJ2MB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35YDIWCUMWTMDBWFRAVENFH6BLB65D6S/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4WBZJNSALFGMPYTINIF57HAAK46U72WQ/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/63FS6VHY4DCS74HBTEINUDOECQ2X6ZCH/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WQPHKGNXUJC3TC3BDW5RKGROWRJVSFR/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WQPHKGNXUJC3TC3BDW5RKGROWRJVSFR/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B3YI6JYARWU6GULWOHNUROSACT54XFFS/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTPVDZDATRQFE6KAT6B4BQIQ4GRHIIIJ/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IN26PWZTYG6IF3APLRXQJBVACQHZUPT2/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IN26PWZTYG6IF3APLRXQJBVACQHZUPT2/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JCDJXNBHWXNYUTOEV4H2HCFSRKV3SYL3/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JTYVESWVBPD57ZJC35G5722Q6TS37WSB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KNE4GMD45RGC2HWUAAIGTDHT5VJ2E4O4/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LKWAMPURWUV3DCCT4J7VHRF4NT2CFVBR/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O67LRHDTJWH544KXB6KY4HMHQLYDXFPK/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ORVCQGJCCAVLN4DJDTWGREFCUWXKQRML/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PLQ2BNZVBBAQPV3SPRU24ZD37UYJJS7W/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QLUGZSEAO3MBWGKCUSMKQIRYJZKJCIOB/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDK3ZZBRYFO47ET3N4BNTKVXN47U6ICY/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RH57BNT4VQERGEJ5SXNXSVMDYP66YD4H/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RTN2OOLKYTG34DODUEJGT5MLC2PFGPBA/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T3D5TX4TDJPXHXD2QICKTY3OCQC3JARP/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UHVW73QZJMHA4MK7JBT7CXX7XSNYQEGF/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMDX6IFKLOA3NXUQEV524L5LHTPI2JI/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3EJ6J7PXVQOULBQZQGBXCXY6LFF6LZD/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X3EJ6J7PXVQOULBQZQGBXCXY6LFF6LZD/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XXZJL3CNAFS5PAIR7K4RL62S3Y7THR7O/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XXZJL3CNAFS5PAIR7K4RL62S3Y7THR7O/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YPNWZKXPKTNHS5FVMN7UQZ2UPCSEFJUK/</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZB5YCMIRVX35RUB6XPOWKENCVCJEVDRK/</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-45061">https://nvd.nist.gov/vuln/detail/CVE-2022-45061</a>
+          <a href="https://python-security.readthedocs.io/vuln/slow-idna-large-strings.html">https://python-security.readthedocs.io/vuln/slow-idna-large-strings.html</a>
+          <a href="https://security.netapp.com/advisory/ntap-20221209-0007/">https://security.netapp.com/advisory/ntap-20221209-0007/</a>
+          <a href="https://ubuntu.com/security/notices/USN-5767-1">https://ubuntu.com/security/notices/USN-5767-1</a>
+          <a href="https://ubuntu.com/security/notices/USN-5767-2">https://ubuntu.com/security/notices/USN-5767-2</a>
+          <a href="https://ubuntu.com/security/notices/USN-5888-1">https://ubuntu.com/security/notices/USN-5888-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3-setuptools-wheel</td>
+        <td>CVE-2022-40897</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">53.0.0-10.el9</td>
+        <td>53.0.0-10.el9_1.1</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0952">https://access.redhat.com/errata/RHSA-2023:0952</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-40897">https://access.redhat.com/security/cve/CVE-2022-40897</a>
+          <a href="https://bugzilla.redhat.com/2158559">https://bugzilla.redhat.com/2158559</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40897">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40897</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0952.html">https://errata.almalinux.org/9/ALSA-2023-0952.html</a>
+          <a href="https://github.com/advisories/GHSA-r9hx-vwmv-q579">https://github.com/advisories/GHSA-r9hx-vwmv-q579</a>
+          <a href="https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200">https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200</a>
+          <a href="https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be">https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be</a>
+          <a href="https://github.com/pypa/setuptools/compare/v65.5.0...v65.5.1">https://github.com/pypa/setuptools/compare/v65.5.0...v65.5.1</a>
+          <a href="https://github.com/pypa/setuptools/issues/3659">https://github.com/pypa/setuptools/issues/3659</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-40897.html">https://linux.oracle.com/cve/CVE-2022-40897.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0952.html">https://linux.oracle.com/errata/ELSA-2023-0952.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-40897">https://nvd.nist.gov/vuln/detail/CVE-2022-40897</a>
+          <a href="https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/">https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/</a>
+          <a href="https://pyup.io/vulnerabilities/CVE-2022-40897/52495/">https://pyup.io/vulnerabilities/CVE-2022-40897/52495/</a>
+          <a href="https://security.netapp.com/advisory/ntap-20230214-0001/">https://security.netapp.com/advisory/ntap-20230214-0001/</a>
+          <a href="https://setuptools.pypa.io/en/latest/">https://setuptools.pypa.io/en/latest/</a>
+          <a href="https://ubuntu.com/security/notices/USN-5817-1">https://ubuntu.com/security/notices/USN-5817-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">systemd-libs</td>
+        <td>CVE-2022-4415</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">250-12.el9_1.1</td>
+        <td>250-12.el9_1.3</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0954">https://access.redhat.com/errata/RHSA-2023:0954</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-4415">https://access.redhat.com/security/cve/CVE-2022-4415</a>
+          <a href="https://bugzilla.redhat.com/2149063">https://bugzilla.redhat.com/2149063</a>
+          <a href="https://bugzilla.redhat.com/2155515">https://bugzilla.redhat.com/2155515</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2155515">https://bugzilla.redhat.com/show_bug.cgi?id=2155515</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2164049">https://bugzilla.redhat.com/show_bug.cgi?id=2164049</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4415">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4415</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0954.html">https://errata.almalinux.org/9/ALSA-2023-0954.html</a>
+          <a href="https://errata.rockylinux.org/RLSA-2023:0837">https://errata.rockylinux.org/RLSA-2023:0837</a>
+          <a href="https://github.com/systemd/systemd/commit/b7641425659243c09473cd8fb3aef2c0d4a3eb9c">https://github.com/systemd/systemd/commit/b7641425659243c09473cd8fb3aef2c0d4a3eb9c</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-4415.html">https://linux.oracle.com/cve/CVE-2022-4415.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0954.html">https://linux.oracle.com/errata/ELSA-2023-0954.html</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-4415">https://nvd.nist.gov/vuln/detail/CVE-2022-4415</a>
+          <a href="https://www.openwall.com/lists/oss-security/2022/12/21/3">https://www.openwall.com/lists/oss-security/2022/12/21/3</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">systemd-libs</td>
+        <td>CVE-2022-45873</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">250-12.el9_1.1</td>
+        <td>250-12.el9_1.3</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/errata/RHSA-2023:0954">https://access.redhat.com/errata/RHSA-2023:0954</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-45873">https://access.redhat.com/security/cve/CVE-2022-45873</a>
+          <a href="https://bugzilla.redhat.com/2149063">https://bugzilla.redhat.com/2149063</a>
+          <a href="https://bugzilla.redhat.com/2155515">https://bugzilla.redhat.com/2155515</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45873">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45873</a>
+          <a href="https://errata.almalinux.org/9/ALSA-2023-0954.html">https://errata.almalinux.org/9/ALSA-2023-0954.html</a>
+          <a href="https://github.com/systemd/systemd/commit/076b807be472630692c5348c60d0c2b7b28ad437">https://github.com/systemd/systemd/commit/076b807be472630692c5348c60d0c2b7b28ad437</a>
+          <a href="https://github.com/systemd/systemd/pull/24853#issuecomment-1326561497">https://github.com/systemd/systemd/pull/24853#issuecomment-1326561497</a>
+          <a href="https://github.com/systemd/systemd/pull/25055#issuecomment-1313733553">https://github.com/systemd/systemd/pull/25055#issuecomment-1313733553</a>
+          <a href="https://linux.oracle.com/cve/CVE-2022-45873.html">https://linux.oracle.com/cve/CVE-2022-45873.html</a>
+          <a href="https://linux.oracle.com/errata/ELSA-2023-0954.html">https://linux.oracle.com/errata/ELSA-2023-0954.html</a>
+          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MS5N5SLYAHKENLAJWYBDKU55ICU3SVZF/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MS5N5SLYAHKENLAJWYBDKU55ICU3SVZF/</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-45873">https://nvd.nist.gov/vuln/detail/CVE-2022-45873</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6">jar</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">io.vertx:vertx-web</td>
+        <td>CVE-2023-24815</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">4.3.4</td>
+        <td>4.3.8</td>
+        <td class="links" data-more-links="off">
+          <a href="https://github.com/advisories/GHSA-53jx-vvf9-4x38">https://github.com/advisories/GHSA-53jx-vvf9-4x38</a>
+          <a href="https://github.com/vert-x3/vertx-web/blob/62c0d66fa1c179ae6a4d57344631679a2b97e60f/vertx-web/src/main/java/io/vertx/ext/web/impl/Utils.java#L83">https://github.com/vert-x3/vertx-web/blob/62c0d66fa1c179ae6a4d57344631679a2b97e60f/vertx-web/src/main/java/io/vertx/ext/web/impl/Utils.java#L83</a>
+          <a href="https://github.com/vert-x3/vertx-web/commit/9e3a783b1d1a731055e9049078b1b1494ece9c15">https://github.com/vert-x3/vertx-web/commit/9e3a783b1d1a731055e9049078b1b1494ece9c15</a>
+          <a href="https://github.com/vert-x3/vertx-web/security/advisories/GHSA-53jx-vvf9-4x38">https://github.com/vert-x3/vertx-web/security/advisories/GHSA-53jx-vvf9-4x38</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24815">https://nvd.nist.gov/vuln/detail/CVE-2023-24815</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+    </table>
+  </body>
+</html>
