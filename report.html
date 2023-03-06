@@ -1,0 +1,814 @@
+{
+    "Findings": [
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2021-43519",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2021-43519",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.180687483-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.180698288-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2021-43519 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to lua",
+            "Description": "Stack overflow in lua_resume of ldo.c in Lua Interpreter 5.1.0~5.4.4 allows attackers to perform a Denial of Service via a crafted script file.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2021-43519"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2021-43519",
+                            "CVE Title": "lua: stack overflow in lua_resume of ldo.c allows a DoS via a crafted script file",
+                            "PkgName": "lua",
+                            "Installed Package": "5.4.2-4.el9_0.3",
+                            "Patched Package": "5.4.4-2.el9_1",
+                            "NvdCvssScoreV3": "5.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "4.3",
+                            "NvdCvssVectorV2": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2021-44964",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2021-44964",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.180898434-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.180904902-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2021-44964 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to lua",
+            "Description": "Use after free in garbage collector and finalizer of lgc.c in Lua interpreter 5.4.0~5.4.3 allows attackers to perform Sandbox Escape via a crafted script file.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2021-44964"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2021-44964",
+                            "CVE Title": "lua: use after free allows Sandbox Escape",
+                            "PkgName": "lua",
+                            "Installed Package": "5.4.2-4.el9_0.3",
+                            "Patched Package": "5.4.4-2.el9_1",
+                            "NvdCvssScoreV3": "6.3",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "4.3",
+                            "NvdCvssVectorV2": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2021-43519",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2021-43519",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181044577-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.18105134-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2021-43519 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to lua-libs",
+            "Description": "Stack overflow in lua_resume of ldo.c in Lua Interpreter 5.1.0~5.4.4 allows attackers to perform a Denial of Service via a crafted script file.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2021-43519"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2021-43519",
+                            "CVE Title": "lua: stack overflow in lua_resume of ldo.c allows a DoS via a crafted script file",
+                            "PkgName": "lua-libs",
+                            "Installed Package": "5.4.2-4.el9_0.3",
+                            "Patched Package": "5.4.4-2.el9_1",
+                            "NvdCvssScoreV3": "5.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "4.3",
+                            "NvdCvssVectorV2": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2021-44964",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2021-44964",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181191855-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181197432-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2021-44964 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to lua-libs",
+            "Description": "Use after free in garbage collector and finalizer of lgc.c in Lua interpreter 5.4.0~5.4.3 allows attackers to perform Sandbox Escape via a crafted script file.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2021-44964"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2021-44964",
+                            "CVE Title": "lua: use after free allows Sandbox Escape",
+                            "PkgName": "lua-libs",
+                            "Installed Package": "5.4.2-4.el9_0.3",
+                            "Patched Package": "5.4.4-2.el9_1",
+                            "NvdCvssScoreV3": "6.3",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "4.3",
+                            "NvdCvssVectorV2": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-4203",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-4203",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181349754-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181356025-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-4203 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "A read buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. The read buffer overrun might result in a crash which could lead to a denial of service attack. In theory it could also result in the disclosure ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-4203"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-4203",
+                            "CVE Title": "openssl: read buffer overflow in X.509 certificate verification",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "0",
+                            "NvdCvssVectorV3": "",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-4304",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-4304",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181491829-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181497419-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-4304 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the serve ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-4304"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-4304",
+                            "CVE Title": "openssl: timing attack in RSA Decryption implementation",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "5.9",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-4450",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-4450",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181630046-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181635498-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-4450 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will popula ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-4450"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-4450",
+                            "CVE Title": "openssl: double free after calling PEM_read_bio_ex",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2023-0215",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-0215",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.181773784-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181779499-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-0215 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public ke ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-0215"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-0215",
+                            "CVE Title": "openssl: use-after-free following BIO_new_NDEF",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2023-0216",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-0216",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.18191406-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.181919928-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-0216 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "An invalid pointer dereference on read can be triggered when an application tries to load malformed PKCS7 data with the d2i_PKCS7(), d2i_PKCS7_bio() or d2i_PKCS7_fp() functions. The result of the dereference is an application crash which could lead to a denial of service attack. The TLS implementation in OpenSSL does not call this function however third party applications might call these functions on untrusted data.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-0216"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-0216",
+                            "CVE Title": "openssl: invalid pointer dereference in d2i_PKCS7 functions",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2023-0217",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-0217",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182062464-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.18206843-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-0217 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "An invalid pointer dereference on read can be triggered when an application tries to check a malformed DSA public key by the EVP_PKEY_public_check() function. This will most likely lead to an application crash. This function can be called on public keys supplied from untrusted sources which could allow an attacker to cause a denial of service attack. The TLS implementation in OpenSSL does not call this function but applications might call the function if there are additional security requirements imposed by ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-0217"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-0217",
+                            "CVE Title": "openssl: NULL dereference validating DSA public key",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2023-0286",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-0286",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182206372-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182212119-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-0286 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may a ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-0286"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-0286",
+                            "CVE Title": "openssl: X.400 address type confusion in X.509 GeneralName",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.4",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2023-0401",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-0401",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182354649-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182360464-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-0401 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to openssl-libs",
+            "Description": "A NULL pointer can be dereferenced when signatures are being verified on PKCS7 signed or signedAndEnveloped data. In case the hash algorithm used for the signature is known to the OpenSSL library but the implementation of the hash algorithm is not available the digest initialization will fail. There is a missing check for the return value from the initialization function which later leads to invalid usage of the digest API most likely leading to a crash. The unavailability of an algorithm can be caused by u ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-0401"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-0401",
+                            "CVE Title": "openssl: NULL dereference during PKCS7 data verification",
+                            "PkgName": "openssl-libs",
+                            "Installed Package": "1:3.0.1-43.el9_0",
+                            "Patched Package": "1:3.0.1-47.el9_1",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-45061",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-45061",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182490138-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182495557-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-45061 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to python3",
+            "Description": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostna ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-45061"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-45061",
+                            "CVE Title": "Python: CPU denial of service via inefficient IDNA decoder",
+                            "PkgName": "python3",
+                            "Installed Package": "3.9.14-1.el9_1.1",
+                            "Patched Package": "3.9.14-1.el9_1.2",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-45061",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-45061",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182642505-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182648528-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-45061 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to python3-libs",
+            "Description": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostna ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-45061"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-45061",
+                            "CVE Title": "Python: CPU denial of service via inefficient IDNA decoder",
+                            "PkgName": "python3-libs",
+                            "Installed Package": "3.9.14-1.el9_1.1",
+                            "Patched Package": "3.9.14-1.el9_1.2",
+                            "NvdCvssScoreV3": "7.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-40897",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-40897",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182779973-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182785524-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-40897 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to python3-setuptools-wheel",
+            "Description": "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-40897"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-40897",
+                            "CVE Title": "pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py",
+                            "PkgName": "python3-setuptools-wheel",
+                            "Installed Package": "53.0.0-10.el9",
+                            "Patched Package": "53.0.0-10.el9_1.1",
+                            "NvdCvssScoreV3": "5.9",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-4415",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-4415",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.182918734-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.182924613-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-4415 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to systemd-libs",
+            "Description": "A vulnerability was found in systemd. This security flaw can cause a local information leak due to systemd-coredump not respecting the fs.suid_dumpable kernel setting.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-4415"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-4415",
+                            "CVE Title": "systemd: local information leak due to systemd-coredump not respecting fs.suid_dumpable kernel setting",
+                            "PkgName": "systemd-libs",
+                            "Installed Package": "250-12.el9_1.1",
+                            "Patched Package": "250-12.el9_1.3",
+                            "NvdCvssScoreV3": "5.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)/CVE-2022-45873",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2022-45873",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.183053628-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.183059349-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2022-45873 in container quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1), related to systemd-libs",
+            "Description": "systemd 250 and 251 allows local users to achieve a systemd-coredump deadlock by triggering a crash that has a long backtrace. This occurs in parse_elf_object in shared/elf-util.c. The exploitation methodology is to crash a binary calling the same function recursively, and put it in a deeply nested directory to make its backtrace large enough to cause the deadlock. This must be done 16 times when MaxConnections=16 is set for the systemd/units/systemd-coredump.socket file.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2022-45873"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1)" },
+                        "Other": {
+                            "CVE ID": "CVE-2022-45873",
+                            "CVE Title": "systemd: deadlock in systemd-coredump via a crash with a long backtrace",
+                            "PkgName": "systemd-libs",
+                            "Installed Package": "250-12.el9_1.1",
+                            "Patched Package": "250-12.el9_1.3",
+                            "NvdCvssScoreV3": "5.5",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "Java/CVE-2023-24815",
+            "ProductArn": "arn:aws:securityhub:::product/aquasecurity/aquasecurity",
+            "GeneratorId": "Trivy/CVE-2023-24815",
+            "AwsAccountId": "",
+            "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
+            "CreatedAt": "2023-03-06T15:08:57.183205773-03:00",
+            "UpdatedAt": "2023-03-06T15:08:57.183211463-03:00",
+            "Severity": {
+                "Label": "MEDIUM"
+            },
+            "Title": "Trivy found a vulnerability to CVE-2023-24815 in container Java, related to io.vertx:vertx-web",
+            "Description": "Vert.x-Web is a set of building blocks for building web applications in the java programming language. When running vertx web applications that serve files using `StaticHandler` on Windows Operating Systems and Windows File Systems, if the mount point is a wildcard (`*`) then an attacker can exfiltrate any class path resource. When computing the relative path to locate the resource, in case of wildcards, the code: `return &#34;/&#34; + rest;` from `Utils.java` returns the user input (without validation) as the segm ..",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "More information on this vulnerability is provided in the hyperlink",
+                    "Url": "https://avd.aquasec.com/nvd/cve-2023-24815"
+                }
+            },
+            "ProductFields": { "Product Name": "Trivy" },
+            "Resources": [
+                {
+                    "Type": "Container",
+                    "Id": "Java",
+                    "Partition": "aws",
+                    "Region": "",
+                    "Details": {
+                        "Container": { "ImageName": "Java" },
+                        "Other": {
+                            "CVE ID": "CVE-2023-24815",
+                            "CVE Title": "StaticHandler disclosure of classpath resources on Windows when mounted on a wildcard route",
+                            "PkgName": "io.vertx:vertx-web",
+                            "Installed Package": "4.3.4",
+                            "Patched Package": "4.3.8",
+                            "NvdCvssScoreV3": "5.3",
+                            "NvdCvssVectorV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                            "NvdCvssScoreV2": "0",
+                            "NvdCvssVectorV2": ""
+                        }
+                    }
+                }
+            ],
+            "RecordState": "ACTIVE"
+        }
+    ]
+}
