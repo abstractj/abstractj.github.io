@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .group-header th {
+        font-size: 200%;
+      }
+      .sub-header th {
+        font-size: 150%;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        white-space: nowrap;
+        padding: .3em;
+      }
+      table {
+        margin: 0 auto;
+      }
+      .severity {
+        text-align: center;
+        font-weight: bold;
+        color: #fafafa;
+      }
+      .severity-LOW .severity { background-color: #5fbb31; }
+      .severity-MEDIUM .severity { background-color: #e9c600; }
+      .severity-HIGH .severity { background-color: #ff8800; }
+      .severity-CRITICAL .severity { background-color: #e40000; }
+      .severity-UNKNOWN .severity { background-color: #747474; }
+      .severity-LOW { background-color: #5fbb3160; }
+      .severity-MEDIUM { background-color: #e9c60060; }
+      .severity-HIGH { background-color: #ff880060; }
+      .severity-CRITICAL { background-color: #e4000060; }
+      .severity-UNKNOWN { background-color: #74747460; }
+      table tr td:first-of-type {
+        font-weight: bold;
+      }
+      .links a,
+      .links[data-more-links=on] a {
+        display: block;
+      }
+      .links[data-more-links=off] a:nth-of-type(1n+5) {
+        display: none;
+      }
+      a.toggle-more-links { cursor: pointer; }
+    </style>
+    <title>quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1) - Trivy Report - 2023-03-08 11:28:58.206337292 -0300 -03 m=+3.763430046 </title>
+    <script>
+      window.onload = function() {
+        document.querySelectorAll('td.links').forEach(function(linkCell) {
+          var links = [].concat.apply([], linkCell.querySelectorAll('a'));
+          [].sort.apply(links, function(a, b) {
+            return a.href > b.href ? 1 : -1;
+          });
+          links.forEach(function(link, idx) {
+            if (links.length > 3 && 3 === idx) {
+              var toggleLink = document.createElement('a');
+              toggleLink.innerText = "Toggle more links";
+              toggleLink.href = "#toggleMore";
+              toggleLink.setAttribute("class", "toggle-more-links");
+              linkCell.appendChild(toggleLink);
+            }
+            linkCell.appendChild(link);
+          });
+        });
+        document.querySelectorAll('a.toggle-more-links').forEach(function(toggleLink) {
+          toggleLink.onclick = function() {
+            var expanded = toggleLink.parentElement.getAttribute("data-more-links");
+            toggleLink.parentElement.setAttribute("data-more-links", "on" === expanded ? "off" : "on");
+            return false;
+          };
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>quay.io/keycloak/keycloak-operator:21.0.1 (redhat 9.1) - Trivy Report - 2023-03-08 11:28:58.206357078 -0300 -03 m=+3.763449826</h1>
+    <table>
+      <tr class="group-header"><th colspan="6">redhat</th></tr>
+      <tr><th colspan="6">No Vulnerabilities found</th></tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+      <tr class="group-header"><th colspan="6">jar</th></tr>
+      <tr class="sub-header">
+        <th>Package</th>
+        <th>Vulnerability ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+        <th>Links</th>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">io.vertx:vertx-web</td>
+        <td>CVE-2023-24815</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">4.3.4</td>
+        <td>4.3.8</td>
+        <td class="links" data-more-links="off">
+          <a href="https://github.com/advisories/GHSA-53jx-vvf9-4x38">https://github.com/advisories/GHSA-53jx-vvf9-4x38</a>
+          <a href="https://github.com/vert-x3/vertx-web/blob/62c0d66fa1c179ae6a4d57344631679a2b97e60f/vertx-web/src/main/java/io/vertx/ext/web/impl/Utils.java#L83">https://github.com/vert-x3/vertx-web/blob/62c0d66fa1c179ae6a4d57344631679a2b97e60f/vertx-web/src/main/java/io/vertx/ext/web/impl/Utils.java#L83</a>
+          <a href="https://github.com/vert-x3/vertx-web/commit/9e3a783b1d1a731055e9049078b1b1494ece9c15">https://github.com/vert-x3/vertx-web/commit/9e3a783b1d1a731055e9049078b1b1494ece9c15</a>
+          <a href="https://github.com/vert-x3/vertx-web/security/advisories/GHSA-53jx-vvf9-4x38">https://github.com/vert-x3/vertx-web/security/advisories/GHSA-53jx-vvf9-4x38</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24815">https://nvd.nist.gov/vuln/detail/CVE-2023-24815</a>
+        </td>
+      </tr>
+      <tr><th colspan="6">No Misconfigurations found</th></tr>
+    </table>
+  </body>
+</html>
